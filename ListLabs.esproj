@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.26-alpha">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>54ce861f-0d10-49f8-b245-cdeb35b6f9e9</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupCommand>set BROWSER=none&amp;&amp;npm start</StartupCommand>
+    <JavaScriptTestRoot>src\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
+    <BuildCommand>npm start</BuildCommand>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\Pages\" />
+    <Folder Include="src\Styles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptConfiguration Remove="src\NewFolder1\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\NewFolder1\**" />
+  </ItemGroup>
+</Project>
